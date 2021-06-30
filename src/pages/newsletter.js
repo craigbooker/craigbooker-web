@@ -1,8 +1,11 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
+
 const NewsLetter = () => {
   return (
     <Layout>
+      <SEO title="Newsletter " />
       <section className="newsletter-page">
         <div className="page-center">
           <h2>Get all the latest stories to your inbox</h2>
