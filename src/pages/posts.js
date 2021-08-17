@@ -9,6 +9,7 @@ const PostsPage = ({ data }) => {
   const {
     allMdx: { nodes: posts },
   } = data
+
   return (
     <Layout>
       <SEO title="Posts " />
@@ -20,17 +21,19 @@ const PostsPage = ({ data }) => {
 
 export const query = graphql`
   {
-    allMdx(sort: { fields: frontmatter___date, order: DESC }) {
+    allMdx(
+      filter: { fileAbsolutePath: { regex: "/posts/" } }
+      sort: { fields: frontmatter___date, order: DESC }
+    ) {
       nodes {
         excerpt
         frontmatter {
           title
           author
           category
-          readTime
           date(formatString: "MMMM, Do YYYY")
           slug
-          image {
+          cover {
             childImageSharp {
               gatsbyImageData
             }
@@ -41,5 +44,28 @@ export const query = graphql`
     }
   }
 `
+
+// export const query1 = graphql`
+//   {
+//     posts: allMdx(
+//       filter: { fileAbsolutePath: { regex: "/posts/" } }
+//       sort: { fields: frontmatter___date, order: DESC }
+//     ) {
+//       edges {
+//         node {
+//           id
+//           frontmatter {
+//             path
+//             title
+//             tags
+//             category
+//             series
+//             date
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
 
 export default PostsPage

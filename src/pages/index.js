@@ -1,8 +1,13 @@
 import React from 'react'
-import Hero from '../components/Hero'
-import Layout from '../components/Layout'
-import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
+
+import Layout from '../components/Layout'
+import Hero from '../components/Hero'
+import StyledHero from '../components/StyledHero'
+import HeroBanner from '../components/HeroBanner'
+// import Posts from '../components/Posts'
+import RecentPosts from '../components/Home/RecentPosts'
+
 import SEO from '../components/SEO'
 
 const IndexPage = ({ data }) => {
@@ -14,7 +19,11 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home " />
       <Hero showPerson />
-      <Posts posts={posts} title="recently published" />
+      <StyledHero>
+        <HeroBanner title="Hello & Welcome!" info="" />
+      </StyledHero>
+      {/* <Posts posts={posts} title="recently published" /> */}
+      <RecentPosts posts={posts} title="recently published" />
     </Layout>
   )
 }
@@ -30,8 +39,7 @@ export const query = graphql`
           category
           date(formatString: "MMMM, Do YYYY")
           slug
-          readTime
-          image {
+          cover {
             childImageSharp {
               gatsbyImageData
             }
