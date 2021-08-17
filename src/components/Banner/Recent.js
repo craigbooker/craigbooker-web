@@ -13,7 +13,7 @@ const query = graphql`
           title
           date(formatString: "MMMM, Do YYYY")
           slug
-          image {
+          cover {
             childImageSharp {
               gatsbyImageData
             }
