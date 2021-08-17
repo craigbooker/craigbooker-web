@@ -3,7 +3,6 @@ import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import styled from 'styled-components'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
-import Banner from '../components/Banner'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import SEO from '../components/SEO'
@@ -11,7 +10,7 @@ import SEO from '../components/SEO'
 const PostTemplate = ({ data }) => {
   const {
     mdx: {
-      frontmatter: { title, category, image, date, embeddedImages },
+      frontmatter: { title, category, cover, date, embeddedImages },
       body,
     },
   } = data
@@ -24,7 +23,7 @@ const PostTemplate = ({ data }) => {
         {/*  post info */}
         <article>
           <GatsbyImage
-            image={getImage(image)}
+            image={getImage(cover)}
             alt={title}
             className="main-img"
           />
@@ -37,9 +36,6 @@ const PostTemplate = ({ data }) => {
           <MDXRenderer embeddedImages={embeddedImages}>{body}</MDXRenderer>
         </article>
         {/*  banner component */}
-        <article>
-          <Banner />
-        </article>
       </Wrapper>
     </Layout>
   )
@@ -52,9 +48,8 @@ export const query = graphql`
         title
         category
         date(formatString: "MMMM Do, YYYY")
-        readTime
         slug
-        image {
+        cover {
           childImageSharp {
             gatsbyImageData
           }
@@ -103,7 +98,7 @@ const Wrapper = styled.section`
       width: 92vw;
     }
     .main-img {
-      width: 75%;
+      width: 95%;
       display: block;
       margin: 0 auto;
     }
@@ -111,7 +106,7 @@ const Wrapper = styled.section`
   @media (min-width: 1170px) {
     & {
       display: grid;
-      grid-template-columns: 1fr 200px;
+      grid-template-columns: 1fr;
       column-gap: 4rem;
     }
   }

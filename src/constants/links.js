@@ -4,25 +4,15 @@ const Links = ({ styleClass, children }) => {
   return (
     <ul className={styleClass}>
       <li>
-        <Link to="/" className="page-link">
-          Home
+        <Link to="/about" className="page-link">
+          Start Here
         </Link>
       </li>
       <li>
         <Link to="/posts" className="page-link">
-          Posts
+          Blog
         </Link>
         {children}
-      </li>
-      <li>
-        <Link to="/newsletter" className="page-link">
-          Newsletter
-        </Link>
-      </li>
-      <li>
-        <Link to="/post" className="page-link">
-          Post
-        </Link>
       </li>
     </ul>
   )
