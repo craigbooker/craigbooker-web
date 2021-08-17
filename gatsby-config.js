@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Gatsby MDX Blog`,
+    title: `Craig Booker`,
     description: `Awesome MDX blog built with Gatsby and MDX`,
     titleTemplate: `%s | Gatsby MDX Blog`,
     url: `https://gatsby-mdx-blog-web.netlify.app/`,
@@ -30,8 +30,22 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'mdPosts',
+        path: `${__dirname}/content/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `posts`,
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/content/posts`,
       },
     },
     {
