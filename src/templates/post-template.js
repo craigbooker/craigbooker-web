@@ -44,6 +44,7 @@ const PostTemplate = ({ data }) => {
 export const query = graphql`
   query GetSinglePost($slug: String) {
     mdx(frontmatter: { slug: { eq: $slug } }) {
+      body
       frontmatter {
         title
         category
@@ -55,8 +56,6 @@ export const query = graphql`
           }
         }
       }
-
-      body
     }
   }
 `

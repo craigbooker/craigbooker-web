@@ -1,11 +1,12 @@
 import React from 'react'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { FaRegClock } from 'react-icons/fa'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 const Post = ({ excerpt, frontmatter }) => {
-  const { title, cover, slug, category } = frontmatter
+  const { title, cover, slug, date, category } = frontmatter
   return (
     <Wrapper>
       <GatsbyImage image={getImage(cover)} alt={title} className="img" />
@@ -17,6 +18,13 @@ const Post = ({ excerpt, frontmatter }) => {
         <Link to={`/${slug}`} className="link">
           Continue Reading <IoMdArrowRoundForward />
         </Link>
+        <footer>
+          <span className="date">
+            <FaRegClock className="icon" />
+            {date}
+          </span>
+          {/* <span>{readTime} min read</span> */}
+        </footer>
       </div>
     </Wrapper>
   )
