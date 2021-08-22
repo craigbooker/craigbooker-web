@@ -9,7 +9,7 @@ const Links = ({ styleClass, children }) => {
         </Link>
       </li>
       <li>
-        <Link to="/posts" className="page-link">
+        <Link to="/blog" className="page-link">
           Blog
         </Link>
         {children}
