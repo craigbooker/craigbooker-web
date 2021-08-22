@@ -1,10 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
 import StyledHero from '../components/StyledHero'
 import HeroBanner from '../components/HeroBanner'
-import Posts from '../components/Posts'
 import Series from '../components/Series'
 import SEO from '../components/seo'
 import Pagination from '../components/Pagination'
@@ -26,7 +24,7 @@ const SeriesIndex = ({ data, pageContext }) => {
       </StyledHero>
       <main>
         {/* <Posts posts={posts} title="blog" /> */}
-        <Series posts={posts} title="series" />
+        <Series series={posts} title="series" />
         <Pagination pageContext={pageContext} />
       </main>
     </Layout>

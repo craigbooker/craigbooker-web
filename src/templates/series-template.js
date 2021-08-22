@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Series from '../components/Series'
+import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
 
@@ -18,7 +19,7 @@ const SeriesTemplate = props => {
     <Layout>
       <SEO title={series} />
       <Hero />
-      <Series posts={posts} title={`series / ${series}`} />
+      <Posts posts={posts} title={`series / ${series}`} />
     </Layout>
   )
 }
@@ -27,7 +28,10 @@ export const query = graphql`
   query GetSeries($series: String) {
     series: allMdx(
       sort: { fields: frontmatter___date, order: DESC }
-      filter: { frontmatter: { series: { eq: $series } } }
+      filter: {
+        frontmatter: { series: { eq: $series } }
+        fileAbsolutePath: { regex: "/posts/" }
+      }
     ) {
       nodes {
         excerpt
