@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { links, active } from '../assets/css/blog.module.css'
-import { link } from '../assets/css/pagination.module.css'
+import { links, link, active } from '../assets/css/blog.module.css'
+// import { pagingContainer } from '../assets/css/pagination.module.css'
 
 const Pagination = ({ pageContext }) => {
   const { currentPageNum, pageCount } = pageContext

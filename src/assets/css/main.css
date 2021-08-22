@@ -177,7 +177,7 @@ p {
 /* social links */
 
 main {
-  margin-top: -5rem;
+  margin-top: 1rem;
 }
 /*
 ===============
@@ -195,7 +195,7 @@ Navbar
   top: 0;
   left: 0;
   width: 100%;
-  height: 5rem;
+  height: 4rem;
   display: flex;
   align-items: center;
   z-index: 200;
@@ -271,6 +271,10 @@ Navbar
   color: #ffffff;
 }
 .twitter-icon {
+  /* color: #00acee; */
+  color: #ffffff;
+}
+.github-icon {
   /* color: #00acee; */
   color: #ffffff;
 }
@@ -455,18 +459,20 @@ Posts Component
   max-width: var(--max-width);
   margin: 0 auto;
   margin-bottom: 4rem;
+  margin-top: 4rem;
 }
 .posts-title {
   font-weight: 700;
   text-transform: uppercase;
-  color: #e12d39;
+  color: --clr-black;
   font-size: 1.25rem;
   margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 @media screen and (min-width: 992px) {
   .posts {
-    width: 92vw;
+    width: 85vw;
   }
 }
 @media screen and (min-width: 1170px) {

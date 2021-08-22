@@ -1,6 +1,6 @@
 import React from 'react'
 import Post from './Post'
-import Banner from '../Banner'
+// import Banner from '../Banner'
 const Posts = ({ posts, title }) => {
   return (
     <section className="posts">
@@ -14,9 +14,9 @@ const Posts = ({ posts, title }) => {
           })}
         </article>
         {/*  banner column */}
-        <article>
+        {/* <article>
           <Banner />
-        </article>
+        </article> */}
       </div>
     </section>
   )

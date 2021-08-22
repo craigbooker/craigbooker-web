@@ -14,6 +14,7 @@ const CategoryTemplate = props => {
   const {
     pageContext: { category },
   } = props
+
   return (
     <Layout>
       <SEO title={category} />

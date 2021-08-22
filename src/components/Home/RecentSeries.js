@@ -1,19 +1,19 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Post from '../Posts/Post'
+import Series from '../Series/Series'
 import { IoMdArrowRoundForward } from 'react-icons/io'
 
-const RecentPosts = ({ posts, title }) => {
+const RecentSeries = ({ series, title }) => {
   return (
     <section className="posts">
       <h3 className="posts-title">{title}</h3>
       <div className="posts-center">
         {/*  posts column */}
         <article>
-          {posts.map(post => {
-            return <Post key={post.id} {...post} />
+          {series.map(series => {
+            return <Series key={series.id} {...series} />
           })}
-          <Link to="/blog" className="btn">
+          <Link to="/series" className="btn">
             Read More
             <IoMdArrowRoundForward />
           </Link>
@@ -24,4 +24,4 @@ const RecentPosts = ({ posts, title }) => {
   )
 }
 
-export default RecentPosts
+export default RecentSeries

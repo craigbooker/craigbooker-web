@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
-import Posts from '../components/Series'
+import Series from '../components/Series'
 import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
 
