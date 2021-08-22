@@ -14,7 +14,7 @@ const Series = ({ excerpt, frontmatter }) => {
         <div className="underline"></div>
         <span className="category">{category}</span>
         <p>{excerpt}</p>
-        <Link to={`/${slug}`} className="link">
+        <Link to={`/series/${slug}`} className="link">
           Continue Reading <IoMdArrowRoundForward />
         </Link>
       </div>
