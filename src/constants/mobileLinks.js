@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
-const Links = ({ styleClass, children }) => {
+const MobileLinks = ({ styleClass, children }) => {
   return (
     <ul className={styleClass}>
+      <li>
+        <Link key="home" to="/" className="page-link">
+          Start Here
+        </Link>
+      </li>
+
       <li>
         <Link to="/blog" className="page-link">
           Blog
@@ -18,4 +24,4 @@ const Links = ({ styleClass, children }) => {
   )
 }
 
-export default Links
+export default MobileLinks

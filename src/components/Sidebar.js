@@ -1,5 +1,5 @@
 import React from 'react'
-import Links from '../constants/links'
+import MobileLinks from '../constants/mobileLinks'
 import Categories from '../components/Categories'
 import { IoMdClose } from 'react-icons/io'
 
@@ -10,9 +10,9 @@ const Sidebar = ({ isOpen, toggle }) => {
         <IoMdClose />
       </button>
       <div className="sidebar-container">
-        <Links styleClass="sidebar-links">
-          <Categories />
-        </Links>
+        <MobileLinks styleClass="sidebar-links">
+          {/* <Categories /> */}
+        </MobileLinks>
       </div>
     </aside>
   )

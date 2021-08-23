@@ -1,5 +1,7 @@
 import React from 'react'
 import Title from '../Title'
+import { StaticImage } from 'gatsby-plugin-image'
+
 import {
   about,
   aboutCenter,
@@ -7,23 +9,23 @@ import {
   imgContainer,
   aboutInfo,
 } from '../../assets/css/about.module.css'
-import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+// import { useStaticQuery, graphql } from 'gatsby'
+// import Img from 'gatsby-image'
 
-const getAboutImage = graphql`
-  query aboutHeaderImage {
-    aboutImage: file(relativePath: { eq: "images/craigbookerSquare.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_tracedSVG
-        }
-      }
-    }
-  }
-`
+// const getAboutImage = graphql`
+//   query aboutHeaderImage {
+//     aboutImage: file(relativePath: { eq: "images/craigbookerSquare.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 600) {
+//           ...GatsbyImageSharpFluid_tracedSVG
+//         }
+//       }
+//     }
+//   }
+// `
 
 const AboutHeader = () => {
-  const { aboutImage } = useStaticQuery(getAboutImage)
+  // const { aboutImage } = useStaticQuery(getAboutImage)
   return (
     <section className={about}>
       <Title title="about" subtitle="craig" />
@@ -31,10 +33,14 @@ const AboutHeader = () => {
         <article className={aboutImg}>
           <div className={imgContainer}>
             {/* <img src={img} alt="about company" /> */}
-            <Img
+            <StaticImage
+              src="../../assets/images/craigbookerSquare.jpg"
+              alt="Craig Booker photo"
+            />
+            {/* <Img
               fluid={aboutImage.childImageSharp.fluid}
               alt="awesome landscape"
-            />
+            /> */}
           </div>
         </article>
         <article className={aboutInfo}>

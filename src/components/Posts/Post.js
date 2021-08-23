@@ -15,7 +15,7 @@ const Post = ({ excerpt, frontmatter }) => {
         <div className="underline"></div>
         <span className="category">{category}</span>
         <p>{excerpt}</p>
-        <Link to={`/${slug}`} className="link">
+        <Link to={`/${slug}`} className="article-link">
           Continue Reading <IoMdArrowRoundForward />
         </Link>
         <footer>
@@ -84,6 +84,35 @@ const Wrapper = styled.article`
     border-color: var(--clr-primary-8);
     color: var(--clr-primary-8);
   }
+
+  .article-link {
+    margin-right: 1rem;
+  }
+
+  .article-link {
+    text-transform: uppercase;
+
+    color: var(--clr-black);
+    letter-spacing: var(--spacing);
+    font-weight: 700;
+    padding: 0.375rem 0.75rem;
+    display: inline-block;
+    align-items: center;
+    transition: var(--transition);
+    border-radius: var(--radius);
+    svg {
+      margin-left: 0.25rem;
+      padding-top: 0.35rem;
+      font-size: 1.3rem;
+    }
+  }
+  .article-link:hover {
+    /* border-color: var(--clr-primary-8);
+    color: var(--clr-primary-8); */
+    background: var(--clr-black);
+    color: var(--clr-white);
+  }
+
   footer {
     margin-top: 2rem;
     padding-top: 1rem;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { FaBars } from 'react-icons/fa'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/images/logo.svg'
 import Links from '../../constants/links'
 
 const Navbar = ({ toggle }) => {

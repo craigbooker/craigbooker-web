@@ -90,7 +90,7 @@ exports.createPages = async ({ graphql, actions }) => {
   // Create individual series pages
   //response.data.categories.distinct.forEach
   result.data.seriesSet.distinct.forEach(series => {
-    console.log('SERIES:' + series)
+    //console.log('SERIES:' + series)
 
     createPage({
       path: `/series/${_.kebabCase(series)}/`,
@@ -115,7 +115,7 @@ exports.createPages = async ({ graphql, actions }) => {
     const nextEdge = postEdges[nextID]
     const prevEdge = postEdges[prevID]
 
-    console.log('PATH:' + edge.node.frontmatter.path)
+    //console.log('PATH:' + edge.node.frontmatter.path)
 
     createPage({
       path: `${edge.node.frontmatter.path}/`,
