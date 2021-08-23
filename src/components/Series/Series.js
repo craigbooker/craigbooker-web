@@ -14,7 +14,7 @@ const Series = ({ excerpt, frontmatter }) => {
         <div className="underline"></div>
         <span className="category">{category}</span>
         <p>{excerpt}</p>
-        <Link to={`/series/${slug}`} className="link">
+        <Link to={`/series/${slug}`} className="series-link">
           Continue Reading <IoMdArrowRoundForward />
         </Link>
       </div>
@@ -76,6 +76,35 @@ const Wrapper = styled.article`
     border-color: var(--clr-primary-8);
     color: var(--clr-primary-8);
   }
+
+  .series-link {
+    margin-right: 1rem;
+  }
+
+  .series-link {
+    text-transform: uppercase;
+
+    color: var(--clr-black);
+    letter-spacing: var(--spacing);
+    font-weight: 700;
+    padding: 0.375rem 0.75rem;
+    display: inline-block;
+    align-items: center;
+    transition: var(--transition);
+    border-radius: var(--radius);
+    svg {
+      margin-left: 0.25rem;
+      padding-top: 0.35rem;
+      font-size: 1.3rem;
+    }
+  }
+  .series-link:hover {
+    /* border-color: var(--clr-primary-8);
+    color: var(--clr-primary-8); */
+    background: var(--clr-black);
+    color: var(--clr-white);
+  }
+
   footer {
     margin-top: 2rem;
     padding-top: 1rem;
