@@ -3,7 +3,7 @@ import React from 'react'
 import StyledHero from '../components/StyledHero'
 import HeroBanner from '../components/HeroBanner'
 import Layout from '../components/Layout'
-import SEO from '../components/seo'
+import SEO from '../components/Seo'
 import AboutHeader from '../components/About/AboutHeader'
 
 const About = ({ data }) => {

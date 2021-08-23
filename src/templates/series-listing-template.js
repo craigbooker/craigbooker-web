@@ -4,7 +4,7 @@ import Layout from '../components/Layout'
 import StyledHero from '../components/StyledHero'
 import HeroBanner from '../components/HeroBanner'
 import Series from '../components/Series'
-import SEO from '../components/seo'
+import SEO from '../components/Seo'
 import Pagination from '../components/Pagination'
 
 const SeriesIndex = ({ data, pageContext }) => {

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import SEO from '../components/seo'
+import SEO from '../components/Seo'
 
 const PostTemplate = ({ data }) => {
   const {

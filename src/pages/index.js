@@ -8,7 +8,7 @@ import HeroBanner from '../components/HeroBanner'
 import RecentPosts from '../components/Home/RecentPosts'
 import RecentSeries from '../components/Home/RecentSeries'
 
-import SEO from '../components/seo'
+import SEO from '../components/Seo'
 
 const IndexPage = ({ data }) => {
   const {

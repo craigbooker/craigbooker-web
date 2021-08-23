@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
-import SEO from '../components/seo'
+import SEO from '../components/Seo'
 
 const SeriesTemplate = props => {
   const {

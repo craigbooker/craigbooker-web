@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import StyledHero from '../components/StyledHero'
 import HeroBanner from '../components/HeroBanner'
 import Posts from '../components/Posts'
-import SEO from '../components/seo'
+import SEO from '../components/Seo'
 import Pagination from '../components/Pagination'
 
 const ArticleIndex = ({ data, pageContext }) => {
