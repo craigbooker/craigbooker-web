@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
-import SEO from '../components/SEO'
+import SEO from '../components/seo'
 
 const CategoryTemplate = props => {
   const {

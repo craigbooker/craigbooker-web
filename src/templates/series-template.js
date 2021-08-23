@@ -1,10 +1,9 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
-import Series from '../components/Series'
 import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
-import SEO from '../components/SEO'
+import SEO from '../components/seo'
 
 const SeriesTemplate = props => {
   const {

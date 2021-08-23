@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import { graphql } from 'gatsby'
 import Posts from '../components/Posts'
-import SEO from '../components/SEO'
+import SEO from '../components/seo'
 
 const PostsPage = ({ data }) => {
   const {
