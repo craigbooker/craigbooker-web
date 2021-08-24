@@ -5,6 +5,7 @@ import Layout from '../components/Layout'
 import StyledHero from '../components/StyledHero'
 import HeroBanner from '../components/HeroBanner'
 // import Posts from '../components/Posts'
+import AboutSection from '../components/common/AboutSection'
 import RecentPosts from '../components/Home/RecentPosts'
 import RecentSeries from '../components/Home/RecentSeries'
 
@@ -32,6 +33,11 @@ const IndexPage = ({ data }) => {
         <RecentSeries series={series} title="articles by series" />
 
         <br />
+
+        <AboutSection />
+
+        <br />
+
         <RecentPosts posts={posts} title="latest articles" />
       </main>
     </Layout>
