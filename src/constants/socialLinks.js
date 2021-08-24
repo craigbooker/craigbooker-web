@@ -4,6 +4,7 @@ import {
   FaDribbbleSquare,
   FaTwitterSquare,
   FaGithubSquare,
+  FaLinkedin,
 } from 'react-icons/fa'
 const SocialLinks = ({ styleClass }) => {
   return (
@@ -16,6 +17,11 @@ const SocialLinks = ({ styleClass }) => {
       <li>
         <a href="https://github.com/craigbooker">
           <FaGithubSquare className="social-icon github-icon"></FaGithubSquare>
+        </a>
+      </li>
+      <li>
+        <a href="https://linkedin.com/craigbooker">
+          <FaLinkedin className="social-icon linkedin-icon"></FaLinkedin>
         </a>
       </li>
       <li>
