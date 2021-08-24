@@ -14,7 +14,7 @@ const RecentSeries = ({ series, title }) => {
             return <Series key={series.id} {...series} />
           })}
           <Link to="/series" className="btn">
-            Read More
+            See All Series
             <IoMdArrowRoundForward />
           </Link>
         </article>

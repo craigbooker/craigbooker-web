@@ -14,7 +14,7 @@ const RecentPosts = ({ posts, title }) => {
             return <Post key={post.id} {...post} />
           })}
           <Link to="/blog" className="btn">
-            Read More
+            See All Articles
             <IoMdArrowRoundForward />
           </Link>
         </article>

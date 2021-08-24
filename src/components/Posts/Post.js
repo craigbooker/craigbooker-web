@@ -16,7 +16,7 @@ const Post = ({ excerpt, frontmatter }) => {
         <span className="category">{category}</span>
         <p>{excerpt}</p>
         <Link to={`/${slug}`} className="article-link">
-          Continue Reading <IoMdArrowRoundForward />
+          Read More <IoMdArrowRoundForward />
         </Link>
         <footer>
           <span className="date">
