@@ -3,15 +3,18 @@
  *
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
+const urljoin = require('url-join')
+const path = require('path')
+const config = require('./data/SiteConfig')
 
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Craig Booker`,
-    description: `Awesome MDX blog built with Gatsby and MDX`,
-    titleTemplate: `%s | Gatsby MDX Blog`,
-    url: `https://gatsby-mdx-blog-web.netlify.app/`,
-    twitterUsername: `@craigbooker`,
+    title: config.siteTitle, //`Craig Booker`
+    description: config.siteDescription,
+    titleTemplate: `%s | The official site of Craig Booker`,
+    url: `https://craigbookerv2.netlify.app/`,
+    twitterUsername: config.userTwitter,
     image: `/mainImg.png`,
   },
   plugins: [
