@@ -20,7 +20,7 @@ const SocialLinks = ({ styleClass }) => {
         </a>
       </li>
       <li>
-        <a href="https://linkedin.com/craigbooker">
+        <a href="https://linkedin.com/in/craigbooker">
           <FaLinkedin className="social-icon linkedin-icon"></FaLinkedin>
         </a>
       </li>
