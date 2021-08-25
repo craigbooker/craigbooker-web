@@ -191,7 +191,7 @@ p {
 /* social links */
 
 main {
-  margin-top: 1rem;
+  margin-top: 0rem;
 }
 /*
 ===============
@@ -421,20 +421,21 @@ Sidebar
   font-size: 3rem;
   cursor: pointer;
 }
+
 /*
 ===============
-Hero
+HeroSpacer
 ===============
 */
-.hero {
+.hero-spacer {
   background: var(--clr-white);
-  height: 12rem;
+  height: 8rem;
   position: relative;
   z-index: -1;
   margin-bottom: 6rem;
 }
 
-.hero::after {
+.hero-spacer::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -444,14 +445,14 @@ Hero
 
   background-size: cover;
 }
-.hero-person {
+.hero-spacer-person {
   display: none !important;
 }
 @media screen and (min-width: 800px) {
-  .hero {
-    height: 20rem;
+  .hero-spacer {
+    height: 10rem;
   }
-  .hero-person {
+  .hero-spacer-person {
     width: 20rem;
     height: 20rem;
     display: block !important;
@@ -462,11 +463,12 @@ Hero
     z-index: 4;
   }
 }
-.small-hero {
+.small-spacer-hero {
   height: 12rem;
   background: var(--clr-primary-10);
   margin-bottom: 6rem;
 }
+
 /*
 ===============
 Posts Component

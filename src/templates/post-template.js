@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
+import HeroSpacer from '../components/common/HeroSpacer'
 import styled from 'styled-components'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
 import { graphql } from 'gatsby'
@@ -18,7 +18,7 @@ const PostTemplate = ({ data }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <Hero />
+      <HeroSpacer />
       <Wrapper>
         {/*  post info */}
         <article>

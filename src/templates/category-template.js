@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
+import HeroSpacer from '../components/common/HeroSpacer'
 import Posts from '../components/Posts'
 import { graphql } from 'gatsby'
 import SEO from '../components/Seo'
@@ -18,7 +18,7 @@ const CategoryTemplate = props => {
   return (
     <Layout>
       <SEO title={category} />
-      <Hero />
+      <HeroSpacer />
       <Posts posts={posts} title={`category / ${category}`} />
     </Layout>
   )

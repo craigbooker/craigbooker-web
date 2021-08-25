@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Hero from '../components/Hero'
+import HeroSpacer from '../components/common/HeroSpacer'
 import { graphql } from 'gatsby'
 import Posts from '../components/Posts'
 import SEO from '../components/Seo'
@@ -13,7 +13,7 @@ const PostsPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Posts " />
-      <Hero />
+      <HeroSpacer />
       <Posts posts={posts} title="all posts" />
     </Layout>
   )
