@@ -1,0 +1,33 @@
+/*
+===============
+Recent Posts Component
+===============
+*/
+.recent-posts {
+  width: 85vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+.recent-posts-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: --clr-black;
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 992px) {
+  .recent-posts {
+    width: 85vw;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .recent-posts-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1rem;
+  }
+}

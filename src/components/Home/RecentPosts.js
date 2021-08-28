@@ -2,12 +2,17 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Post from '../Posts/Post'
 import { IoMdArrowRoundForward } from 'react-icons/io'
+import {
+  recentPosts,
+  recentPostsTitle,
+  recentPostsCenter,
+} from '../../assets/css/recent-posts.module.css'
 
 const RecentPosts = ({ posts, title }) => {
   return (
-    <section className="posts">
-      <h3 className="posts-title">{title}</h3>
-      <div className="posts-center">
+    <section className={recentPosts}>
+      <h3 className={recentPostsTitle}>{title}</h3>
+      <div className={recentPostsCenter}>
         {/*  posts column */}
         <article>
           {posts.map(post => {
