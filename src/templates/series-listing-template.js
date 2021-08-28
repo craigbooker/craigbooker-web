@@ -17,7 +17,7 @@ const SeriesIndex = ({ data, pageContext }) => {
 
   return (
     <Layout>
-      <SEO title="Posts " />
+      <SEO title="Series " />
       {/* <Hero /> */}
       <StyledHero>
         <HeroBanner title="Series" info="" />
