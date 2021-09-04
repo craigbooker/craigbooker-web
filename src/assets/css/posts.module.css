@@ -1,16 +1,14 @@
 /*
 ===============
-Recent Series Component
+Posts Component
 ===============
 */
-
-.recent-series {
+.posts {
   width: 85vw;
   max-width: var(--max-width);
-
   margin: 0 auto;
 }
-.recent-series-title {
+.posts-title {
   font-weight: 700;
   text-transform: uppercase;
   color: --clr-black;
@@ -20,21 +18,12 @@ Recent Series Component
 }
 
 @media screen and (min-width: 992px) {
-  .recent-series {
+  .posts {
     width: 85vw;
-    margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 1170px) {
-  .recent-series {
-    width: 85vw;
-    max-width: var(--max-width);
-
-    margin: 0 auto;
-  }
-
-  .series-center {
+  .posts-center {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 1rem;

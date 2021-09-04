@@ -7,8 +7,6 @@ Recent Posts Component
   width: 85vw;
   max-width: var(--max-width);
   margin: 0 auto;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
 }
 .recent-posts-title {
   font-weight: 700;

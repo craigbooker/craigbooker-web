@@ -2,6 +2,14 @@
   padding: 4rem 0;
   margin: 4rem 0;
 }
+
+.about :after,
+::before {
+  margin: 4rem 0;
+  padding: 4rem 0;
+  box-sizing: border-box;
+}
+
 .about-center {
   width: 60vw;
   margin: 0 auto;
@@ -12,6 +20,10 @@
 }
 .about-info {
   margin-top: 3rem;
+}
+
+.static-img {
+  width: 60%;
 }
 
 .about-img img {
@@ -37,7 +49,7 @@
   .about-info {
     margin: 0;
   }
-  .about-img img {
+  .about-img {
     max-height: 165px;
   }
   .about-info p {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import HeroSpacer from '../components/common/HeroSpacer'
 import StyledHero from '../components/StyledHero'
 import HeroBanner from '../components/HeroBanner'
 // import Posts from '../components/Posts'

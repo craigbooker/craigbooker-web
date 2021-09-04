@@ -7,8 +7,8 @@
 
 import React from 'react'
 import Navbar from './common/Navbar'
-import Sidebar from './Sidebar'
-import Footer from './Footer'
+import Sidebar from './common/Sidebar'
+import Footer from './common/Footer'
 
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = React.useState(false)

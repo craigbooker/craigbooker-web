@@ -25,7 +25,7 @@ const SeriesIndex = ({ data, pageContext }) => {
       <main>
         {/* <Posts posts={posts} title="blog" /> */}
         <Series series={posts} title="series" />
-        <Pagination pageContext={pageContext} />
+        <Pagination pageContext={pageContext} pageSlug="series" />
       </main>
     </Layout>
   )

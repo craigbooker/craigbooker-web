@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { links, link, active } from '../assets/css/blog.module.css'
 // import { pagingContainer } from '../assets/css/pagination.module.css'
 
-const Pagination = ({ pageContext }) => {
+const Pagination = ({ pageContext, pageSlug }) => {
   const { currentPageNum, pageCount } = pageContext
   const prevPage =
     currentPageNum - 1 === 1 ? '/blog' : `/blog/page/${currentPageNum - 1}/`
@@ -23,7 +23,9 @@ const Pagination = ({ pageContext }) => {
         return (
           <Link
             key={`listing-page-${pageNum}`}
-            to={pageNum === 1 ? '/blog' : `/blog/page/${pageNum}/`}
+            to={
+              pageNum === 1 ? `/${pageSlug}` : `/${pageSlug}/page/${pageNum}/`
+            }
             className={
               index + 1 === currentPageNum ? `${link} ${active}` : `${link}`
             }

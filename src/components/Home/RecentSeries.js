@@ -5,14 +5,14 @@ import { IoMdArrowRoundForward } from 'react-icons/io'
 import {
   recentSeries,
   recentSeriesTitle,
-  recentSeriesCenter,
+  seriesCenter,
 } from '../../assets/css/recent-series.module.css'
 
 const RecentSeries = ({ series, title }) => {
   return (
     <section className={recentSeries}>
       <h3 className={recentSeriesTitle}>{title}</h3>
-      <div className={recentSeriesCenter}>
+      <div className={seriesCenter}>
         {/*  posts column */}
         <article>
           {series.map(series => {

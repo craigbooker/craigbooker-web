@@ -1,6 +1,5 @@
 import React from 'react'
-import MobileLinks from '../constants/mobileLinks'
-import Categories from '../components/Categories'
+import MobileLinks from '../../constants/mobileLinks'
 import { IoMdClose } from 'react-icons/io'
 
 const Sidebar = ({ isOpen, toggle }) => {

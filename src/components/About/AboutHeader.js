@@ -7,17 +7,20 @@ import {
   aboutCenter,
   aboutImg,
   aboutInfo,
+  staticImg,
 } from '../../assets/css/about.module.css'
 
 const AboutHeader = () => {
   // const { aboutImage } = useStaticQuery(getAboutImage)
   return (
     <section className={about}>
+      <Title title="about" subtitle="craig" />
       <div className={aboutCenter}>
         <article className={aboutImg}>
           <StaticImage
             src="../../assets/images/craigbookerOval.jpg"
             alt="Craig Booker photo"
+            className={staticImg}
           />
         </article>
         <article className={aboutInfo}>

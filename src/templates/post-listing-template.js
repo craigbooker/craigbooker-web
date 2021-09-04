@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 
 import StyledHero from '../components/StyledHero'
-import HeroSpacer from '../components/common/HeroSpacer'
+
 import HeroBanner from '../components/HeroBanner'
 import Posts from '../components/Posts'
 import SEO from '../components/Seo'
@@ -23,10 +23,9 @@ const ArticleIndex = ({ data, pageContext }) => {
       <StyledHero>
         <HeroBanner title="Blog" info="" />
       </StyledHero>
-      {/* <HeroSpacer showperson /> */}
       <main>
         <Posts posts={posts} title="blog" />
-        <Pagination pageContext={pageContext} />
+        <Pagination pageContext={pageContext} pageSlug="blog" />
       </main>
 
       {/* <section className={styles.links}>

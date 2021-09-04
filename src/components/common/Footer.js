@@ -1,6 +1,6 @@
 import React from 'react'
-import SocialLinks from '../constants/socialLinks'
-import SiteConfig from '../../data/SiteConfig'
+import SocialLinks from '../../constants/socialLinks'
+import SiteConfig from '../../../data/SiteConfig'
 
 const Footer = () => {
   return (

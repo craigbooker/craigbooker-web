@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   FaFacebookSquare,
-  FaDribbbleSquare,
   FaTwitterSquare,
   FaGithubSquare,
   FaLinkedin,
