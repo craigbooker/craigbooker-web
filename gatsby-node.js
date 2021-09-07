@@ -38,11 +38,11 @@ const oQuery = `
 					node {
 						id
 						frontmatter {
+              date
+              series
 							path
 							title
-							tags
-							category
-							date
+							slug
 						}
 					}
 				}
@@ -89,24 +89,26 @@ exports.createPages = async ({ graphql, actions }) => {
 
   // Create individual series pages
   //response.data.categories.distinct.forEach
-  result.data.seriesSet.distinct.forEach(series => {
-    //console.log('SERIES:' + series)
-
-    createPage({
-      path: `/series/${_.kebabCase(series)}/`,
-      component: templates.series,
-      context: { series },
-    })
-  })
-  // seriesSet.forEach(series => {
-  //   console.log('SERIES:' + series)
-
+  // result.data.seriesSet.distinct.forEach(series => {
+  //   //console.log('SERIES:' + series)
+  //   //console.log(`${edge.node.frontmatter.slug}`)
   //   createPage({
   //     path: `/series/${_.kebabCase(series)}/`,
   //     component: templates.series,
   //     context: { series },
   //   })
   // })
+
+  seriesEdges.forEach((edge, index) => {
+    const series = edge.node.frontmatter.series
+    console.log('SERIES SLUG:' + edge.node.frontmatter.slug)
+    console.log(`SERIES: ${series}`)
+    createPage({
+      path: `/series/${edge.node.frontmatter.slug}/`,
+      component: templates.series,
+      context: { series },
+    })
+  })
 
   // Create blog post pages
   postEdges.forEach((edge, index) => {
@@ -229,29 +231,6 @@ Creates posts
   //     component: templates.post,
   //     context: {
   //       slug,
-  //     },
-  //   })
-  // })
-  /* 
-Original to the MDX blog
-Creates category pages
-*/
-  // response.data.categories.distinct.forEach(category => {
-  //   createPage({
-  //     path: `/category/${category}`,
-  //     component: templates.category,
-  //     context: {
-  //       category,
-  //     },
-  //   })
-  // })
-
-  // response.data.series.forEach(series => {
-  //   createPage({
-  //     path: `/series/${series}`,
-  //     component: templates.series,
-  //     context: {
-  //       series,
   //     },
   //   })
   // })
