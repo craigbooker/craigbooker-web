@@ -1,0 +1,86 @@
+.hero-top {
+  padding: 5rem 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  align-items: center;
+  height: 50vh;
+  min-height: 360px;
+}
+
+/* @media screen and (min-width: 480) {
+
+}
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (min-width: 800px) {}
+
+@media screen and (min-width: 992px) {}
+
+@media screen and (min-width: 1170px) {} */
+
+/* 480 */
+/* 640  40em*/
+/* 1024 64em*/
+/* 1280 */
+
+/* default styles here for older browsers. 
+       I tend to go for a 600px - 960px width max but using percentages
+    */
+@media only screen and (max-width: 480px) {
+  /* styles for mobile browsers smaller than 480px; (iPhone) */
+  .hero-top {
+    height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  /* styles 4 mobile browsers min-wdith 320px and smaller than 568px; (iPhone 5/SE) */
+  .hero-top {
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  /* styles for mobile browsers smaller than 640px 40em; (iPhone) */
+  .hero-top {
+    height: 70vh;
+    min-height: 350px;
+  }
+}
+
+/* @media only screen and (device-width: 768px) {
+  /* default iPad screens 
+} */
+
+/* @media only screen and (min-width: 960px) {
+  /* styles for browsers larger than 960px ; 
+} */
+
+@media only screen and (min-width: 1024px) {
+  /* styles for browsers larger than 1024px 64em ; */
+  .hero-top {
+    max-height: 500px;
+    min-height: 400px;
+  }
+}
+/* @media only screen and (min-width: 1440px) {
+  /* styles for browsers larger than 1440px; 
+} */
+/* @media only screen and (min-width: 2000px) {
+  /* for sumo sized (mac) screens 
+} */
+
+/* different techniques for iPad screening */
+/* @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* For portrait layouts only 
+} */
+
+/* @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* For landscape layouts only 
+} */
