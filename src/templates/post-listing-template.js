@@ -1,9 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-
-import StyledHero from '../components/StyledHero'
-
+import HeroTop from '../components/common/HeroTop'
 import HeroBanner from '../components/HeroBanner'
 import Posts from '../components/Posts'
 import SEO from '../components/Seo'
@@ -20,9 +18,9 @@ const ArticleIndex = ({ data, pageContext }) => {
   return (
     <Layout>
       <SEO title="Posts " />
-      <StyledHero>
+      <HeroTop>
         <HeroBanner title="Blog" info="" />
-      </StyledHero>
+      </HeroTop>
       <main>
         <Posts posts={posts} title="blog" />
         <Pagination pageContext={pageContext} pageSlug="blog" />
