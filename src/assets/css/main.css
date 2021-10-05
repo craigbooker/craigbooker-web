@@ -709,6 +709,7 @@ Footer
   background: var(--clr-black);
   display: grid;
   place-items: center;
+  margin-top: 4rem;
 }
 .footer-icons {
   display: flex;
