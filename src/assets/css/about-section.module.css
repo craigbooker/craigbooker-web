@@ -1,6 +1,7 @@
 .about-section {
   padding: 4rem 0;
   margin: 4rem 0;
+  align-items: center;
 }
 
 .about-section ::after,
@@ -11,12 +12,13 @@
 }
 
 .about-center {
-  width: 60vw;
-  margin: 0 auto;
+  width: 80vw;
+  margin: auto;
 }
 .about-img {
   margin: 3rem 0;
   position: relative;
+  align-items: center;
 }
 .about-info {
   margin-top: 3rem;
@@ -56,6 +58,16 @@
 
   .about-info p {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 1rem;
+    align-items: center;
+    margin-top: 3rem;
   }
 }
 /* @media screen and (min-width: 992px) {
